@@ -148,6 +148,10 @@ public class Main{
             System.out.println(pq.charAt(i));
 
         }
+        int number_of_words=sc.nextInt();
+        for(int i=0;i<number_of_words;i++){
+
+        }
 
 
     }

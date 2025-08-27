@@ -2,6 +2,9 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class First{
+    static int addition(int a, int b){
+        return a+b;
+    }
     public static void main(String[] args){
 //        llets create the input variable
 //        Scanner sc=new Scanner(System.in);
@@ -47,6 +50,7 @@ public class First{
 
 //        mathod in java
 
+        System.out.println(addition(3,4));
 
 
 
