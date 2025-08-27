@@ -28,6 +28,15 @@ public class Main1{
         System.out.print(num+" ");
         countdown(num-1);
     }
+    public static int factorial(int num){
+        if(num==0){
+            return 1;
+        }
+        if(num==1){
+            return 1;
+        }
+        return num*factorial(num-1);
+    }
     public static void main(String[] args) {
 //        int num1=12;
 //        int num2=15;
@@ -49,8 +58,13 @@ public class Main1{
 //this is the halting situatipon of recursive function
         //    function to crreate the countdown recursive function
     Scanner sc = new Scanner(System.in);
-    int n = sc.nextInt();
-    countdown(n);
+//         int n = sc.nextInt();
+//    countdown(n);
+//    factorial function using recursion
+        System.out.println("Enter the number whose factorial you want to calculate ");
+        int num = sc.nextInt();
+
+        System.out.println(factorial(num));
 
 
     }
