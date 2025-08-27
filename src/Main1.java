@@ -39,6 +39,6 @@ public class Main1{
         System.out.println("Enter the number");
         int num=sc.nextInt();
         System.out.println(recursive_function(num));
-
+//this is the halting situatipon of recursive function
     }
 }
