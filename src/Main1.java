@@ -14,12 +14,19 @@ public class Main1{
 //        return a+" "+b;
 //    }
 //    recursive function
-  public static int recursive_function(int num){
+//  public static int recursive_function(int num){
+//        if(num==0){
+//            return 0;
+//        }
+//        return num+recursive_function(num-1);
+//
+//    }
+    public static void countdown(int num){
         if(num==0){
-            return 0;
+            return;
         }
-        return num+recursive_function(num-1);
-
+        System.out.print(num+" ");
+        countdown(num-1);
     }
     public static void main(String[] args) {
 //        int num1=12;
@@ -35,10 +42,18 @@ public class Main1{
 //        String str2="A 2Y scholar";
 //        System.out.println(myFunction(str1,str2));
 // Lets implimate the recursion fucntion
-        Scanner sc=new Scanner((System.in));
-        System.out.println("Enter the number");
-        int num=sc.nextInt();
-        System.out.println(recursive_function(num));
+//        Scanner sc=new Scanner((System.in));
+//        System.out.println("Enter the number");
+//        int num=sc.nextInt();
+//        System.out.println(recursive_function(num));
 //this is the halting situatipon of recursive function
+        //    function to crreate the countdown recursive function
+    Scanner sc = new Scanner(System.in);
+    int n = sc.nextInt();
+    countdown(n);
+
+
     }
+
+
 }
